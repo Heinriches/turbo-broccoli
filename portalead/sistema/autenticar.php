@@ -1,3 +1,4 @@
 <?php 
-	echo $_POST['usuario'];
+	echo $_POST['usuario'], '<br>';
+	echo $_POST ['senha'];
  ?>
