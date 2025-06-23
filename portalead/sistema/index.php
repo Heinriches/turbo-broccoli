@@ -1,3 +1,11 @@
+<?php 
+	require once('conexao.php');
+	
+	// Criar um usuário-administrador, caso não exista nenhum outro usuário.
+	
+	
+?>
+
 <!DOCTYPE html>
 <html>
 
