@@ -1,8 +1,21 @@
 <?php 
 	require once('conexao.php');
+
+	// Criar senha criptografada, a partir do valor da variável'senha'.
+	$senha = '123';
+	$senha_crip = md5($senha);
 	
 	// Criar um usuário-administrador, caso não exista nenhum outro usuário.
-	
+	$pdo ->	query("INSERT INTO usuarios SET nome = 'Administrador',
+											cpf = '000.000.000-00',
+											usuario = 'contato@mail.com',
+											senha = '$senha',
+											senha_crip = '$senha_crip',
+											nivel = 'Administrador',
+											foto = 'sem-perfil.jpg',
+											id_pessoa = 1,
+											ativo = 'Sim',
+											data = curDate()")
 	
 ?>
 
